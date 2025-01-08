@@ -8,7 +8,7 @@ eureka:
     serviceUrl:
       defaultZone:
         ${EUREKA_HOST:https://bankatii-discovery-server.onrender.com/eureka/}
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: true
+    fetch-registry: true
   server:
     enable-self-preservation: false
