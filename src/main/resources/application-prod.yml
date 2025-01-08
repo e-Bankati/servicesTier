@@ -1,0 +1,14 @@
+server:
+  port: 8050
+
+eureka:
+  instance:
+    hostname: bankatii-servicestier-server.onrender.com
+  client:
+    serviceUrl:
+      defaultZone:
+        ${EUREKA_HOST:https://bankatii-discovery-server.onrender.com/eureka/}
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    enable-self-preservation: false
